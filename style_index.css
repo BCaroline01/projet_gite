@@ -1,0 +1,1922 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+/**************************FONT-FAMILY***********************************************************************************************************************************************************************/
+
+
+
+@font-face {
+font-family: 'Adelle Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Regular'), url('Adelle_Reg.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Italic'), url('Adelle_Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Light Italic'), url('Adelle_LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Light';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Light'), url('Adelle_light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle SemiBold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle SemiBold Italic'), url('Adelle_SemiBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle SemiBold';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle SemiBold'), url('font/Adelle_Semibold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Bold'), url('font/Adelle_Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Bold Italic'), url('Adelle_BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle ExtraBold';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle ExtraBold'), url('Adelle_ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle ExtraBold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle ExtraBold Italic'), url('Adelle_ExtraBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Heavy'), url('Adelle_Heavy.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adelle Heavy Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Adelle Heavy Italic'), url('Adelle_HeavyItalic.woff') format('woff');
+}
+
+/*****************************MEDIA_QUERIES_MOBILE******************************************************************************************************************************************************************/
+
+@media screen and (max-width: 550px){
+
+/************************BACKGROUND-FORMULAIRE***************************************************************************************************************************************************************/
+
+body > header{
+  font-family: 'Adelle SemiBold';
+  font-size: 1rem;
+  color: #7A4419;
+}
+
+#logo{
+  position: absolute;
+  background-color: white;
+  opacity: 0.6;
+  padding: 1.5rem;
+  margin-left: 15%;
+  height: 13%;
+}
+
+.background_form{
+  background-image:url(medias/ryokan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 98.6vw;
+  display: flex;
+}
+
+.background_form > #logo > img{
+  height: 11.5vh;
+}
+
+#form{
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 0.7rem 0;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  
+}
+
+.input-form input{
+  background-color: rgba(255, 255, 255, 0.521);
+  border: none;
+  padding: 0.4rem;
+
+}
+
+#dispo{
+  background-color: #7A4419;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+/*****************************CHECKBOX***********************************************************************************************************************************************************************/
+
+.box{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #7A4419;
+  align-items: center;
+}
+
+#equipment{
+  margin-top: 2rem;
+}
+
+.border-type{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  padding: .5rem;
+  margin-left: .9rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.border-equipment{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  width: 80vw;
+  padding: .5rem;
+  margin-left: .9rem;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.border-type > div{
+ padding: 0.4rem;
+}
+
+.border-equipment > div{
+  padding: 0.4rem;
+}
+
+.legend-type_equipment{
+  text-align: center;
+}
+
+body > .box > #equipment > .border-type > div{
+  display: block;
+}
+
+/****************************PICTURES-DESC*******************************************************************************************************************************************************************/
+
+.accommodation{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1.15rem;
+  margin-left: 1rem;
+  justify-content: space-around;
+}
+
+.container > img{
+  width: 100%;
+  height: 50vh;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div{
+  min-width : 30%;
+  margin: 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: #7A4419;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div > h2{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center; 
+  font-size: 1.6rem;
+}
+
+.accommodation > div > p{
+  margin-left: 2rem;
+  line-height: 1.8rem;
+}
+
+.accommodation > div > button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #7A4419;
+  font-size: 1.3rem;
+  float: right;
+  margin:  3% 2%;
+  
+  cursor: pointer;
+  
+}
+
+.accommodation > div > button > a{
+  text-decoration: none;
+  background-color: white;
+  color: #7A4419;
+}
+
+#div-footer{
+  margin-top: 1.5rem;
+  width: 96.4vw;
+  background-color: #7A4419;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+#div-footer > p{
+  font-size: 1rem;
+  float: right;
+  letter-spacing: 1px;
+}
+
+/****************************MODAL*******************************************************************************************************************************************************************/
+
+.modal {
+  display: block; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(255, 255, 255, 0.486); 
+
+}
+#myModal{
+  display: none; 
+}
+
+#modal-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+  background-color: #fefefe;
+  margin: 3% auto;  
+  padding: 20px;
+  border: 2px solid #7A4419;
+  font-family: 'Adelle Regular';
+}
+
+.mySlides > img {
+    width: 40vw;
+
+  }
+  
+.slideshow-container{
+  width: 40vw;
+  position: relative;
+}
+  
+.mySlides:nth-child(1)  {
+  display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#close {
+  color: #aaa;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  padding: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+form > div > label{
+  font-size: 0.7rem;
+}
+
+form > div > input{
+  font-size: 0.7rem;
+} 
+
+ form > input{
+  font-size: 0.7rem;
+} 
+
+form > button{
+  font-size: 0.7rem;
+}
+
+.accommodationModal{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 0.9rem;
+
+}
+
+.accommodationModal > h2{
+  text-align: center;
+  padding-bottom: 1rem ;
+}
+
+.firstRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.firstRow > :nth-child(2) {
+padding:  0 5rem;
+}
+
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+}
+
+.secondRow > :nth-child(2) {
+padding:  0 5rem;
+}
+.des{
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.arrival{
+  display: flex;
+  flex-direction: row;
+}
+
+.arrival{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+#modal-content > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#modal-content > form > div{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0;
+
+}
+
+#modal-content > form > div > input{
+  text-align: center;
+}
+
+#modal-content > form > input{
+  margin: 0.3rem 0;
+  width: 70%;
+  text-align: center;
+}
+
+#modal-content > form > button{
+  width: 40%;
+  color: white;
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/****************************BOOKING*******************************************************************************************************************************************************************/
+
+
+.bookingHeader{
+  background-color: #7A4419;
+  width: 100vw;
+  height: 20vh;
+}
+
+.bookingHeader > #logo {
+  height: 9vh;
+  margin-left: 5%;
+}
+
+.bookingHeader > #logo > img{
+  height: 9vh;
+}
+
+.thanks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 5rem;
+  width: 100vw;
+  height: 80vh;
+  font-family: 'Adelle Regular';
+}
+
+.thanks > button{
+  
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.thanks > button > a {
+  font-family: 'Adelle Regular';
+  color: white;
+  text-decoration: none;
+}
+
+} 
+
+  /*****************************MEDIA_QUERIES_FROM_551PX_TO_675PX******************************************************************************************************************************************************************/
+
+
+@media screen and (min-width: 551px) and (max-width: 675px){
+/************************BACKGROUND-FORMULAIRE***************************************************************************************************************************************************************/
+
+body > header{
+  font-family: 'Adelle SemiBold';
+  font-size: 1rem;
+  color: #7A4419;
+}
+
+#logo{
+  position: absolute;
+  background-color: white;
+  opacity: 0.6;
+  padding: 1.5rem;
+  margin-left: 15%;
+  height: 13%;
+}
+
+.background_form{
+  background-image:url(medias/ryokan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 98.6vw;
+  display: flex;
+}
+
+.background_form > #logo > img{
+  height: 11.5vh;
+}
+
+#form{
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 0.7rem 0;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  
+}
+
+.input-form input{
+  background-color: rgba(255, 255, 255, 0.521);
+  border: none;
+  padding: 0.4rem;
+
+}
+
+#dispo{
+  background-color: #7A4419;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+/*****************************CHECKBOX***********************************************************************************************************************************************************************/
+
+.box{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #7A4419;
+  align-items: center;
+}
+
+#equipment{
+  margin-top: 2rem;
+}
+
+.border-type{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  padding: .5rem;
+  margin-left: .9rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.border-equipment{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  width: 80vw;
+  padding: .5rem;
+  margin-left: .9rem;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.border-type > div{
+ padding: 0.4rem;
+}
+
+.border-equipment > div{
+  padding: 0.4rem;
+}
+
+.legend-type_equipment{
+  text-align: center;
+}
+
+body > .box > #equipment > .border-type > div{
+  display: block;
+}
+
+/****************************PICTURES-DESC*******************************************************************************************************************************************************************/
+
+.accommodation{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1.15rem;
+  margin-left: 1rem;
+  justify-content: space-around;
+}
+
+.container > img{
+  width: 100%;
+  height: 50vh;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div{
+  max-width : 70vw;
+  margin: 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: #7A4419;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div > h2{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center; 
+  font-size: 1.6rem;
+}
+
+.accommodation > div > p{
+  margin-left: 2rem;
+  line-height: 1.8rem;
+}
+
+.accommodation > div > button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #7A4419;
+  font-size: 1.3rem;
+  float: right;
+  margin:  3% 2%;
+  
+  cursor: pointer;
+  
+}
+
+.accommodation > div > button > a{
+  text-decoration: none;
+  background-color: white;
+  color: #7A4419;
+}
+
+#div-footer{
+  margin-top: 1.5rem;
+  width: 100vw;
+  background-color: #7A4419;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+#div-footer > p{
+  font-size: 1rem;
+  float: right;
+  letter-spacing: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+/****************************MODAL*******************************************************************************************************************************************************************/
+
+.modal {
+  display: block; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(255, 255, 255, 0.486); 
+
+}
+#myModal{
+  display: none; 
+}
+
+#modal-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+  background-color: #fefefe;
+  margin: 3% auto;  
+  padding: 20px;
+  border: 2px solid #7A4419;
+  font-family: 'Adelle Regular';
+}
+
+.mySlides > img {
+    width: 40vw;
+
+  }
+  
+.slideshow-container{
+  width: 40vw;
+  position: relative;
+}
+  
+.mySlides:nth-child(1)  {
+  display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#close {
+  color: #aaa;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  padding: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.booking{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.booking > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accommodationModal{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding: 0.5rem;
+  text-align: justify;
+
+}
+
+.accommodationModal > h2{
+  text-align: center;
+  padding-bottom: 1rem ;
+}
+
+.firstRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.firstRow > :nth-child(2) {
+padding:  0 5rem;
+}
+
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+}
+
+.secondRow > :nth-child(2) {
+padding:  0 5rem;
+}
+.des{
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.arrival{
+  display: flex;
+  flex-direction: row;
+}
+
+.arrival{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+#modal-content > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#modal-content > form > div{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0;
+
+}
+
+#modal-content > form > div > input{
+  text-align: center;
+}
+
+#modal-content > form > input{
+  margin: 0.3rem 0;
+  width: 70%;
+  text-align: center;
+}
+
+#modal-content > form > button{
+  width: 40%;
+  color: white;
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/****************************BOOKING*******************************************************************************************************************************************************************/
+
+
+.bookingHeader{
+  background-color: #7A4419;
+  width: 100vw;
+  height: 20vh;
+}
+
+.bookingHeader > #logo {
+  height: 9vh;
+  margin-left: 5%;
+}
+
+.bookingHeader > #logo > img{
+  height: 9vh;
+}
+
+.thanks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 5rem;
+  width: 100vw;
+  height: 80vh;
+  font-family: 'Adelle Regular';
+}
+
+.thanks > button{
+  
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.thanks > button > a {
+  font-family: 'Adelle Regular';
+  color: white;
+  text-decoration: none;
+}
+
+}
+
+
+/*****************************MEDIA_QUERIES_FROM_676PX_TO_1370PX******************************************************************************************************************************************************************/
+
+  
+@media screen and (min-width: 676px) and (max-width: 1370px){
+
+/************************BACKGROUND-FORM***************************************************************************************************************************************************************/
+
+  body > header{
+    font-family: 'Adelle SemiBold';
+    font-size: 1rem;
+    color: #7A4419;
+  }
+
+  #logo{
+    position: absolute;
+    background-color: white;
+    opacity: 0.6;
+    padding: 1.5rem;
+    margin-left: 15%;
+    height: 13%;
+  }
+
+  .background_form{
+    background-image:url(medias/ryokan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 98.6vw;
+    display: flex;
+  }
+
+  .background_form > #logo > img{
+    height: 11.5vh;
+  }
+
+  #form{
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 0.7rem 0;
+    width: 100vw;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+  }
+
+  .input-form input{
+    background-color: rgba(255, 255, 255, 0.521);
+    border: none;
+    padding: 0.4rem;
+  }
+
+  #dispo{
+    background-color: #7A4419;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    padding: 0 .6rem;
+    border-radius: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .input{
+    display: flex;
+    flex-direction: column;
+  }
+
+/*************************BUTTON_SELECT_TYPE*****************************************************************************************************************************************************************/
+
+  #select-btn_div{
+    padding: 1.8rem;
+  }
+    
+    #select-btn{
+    background-color: #7A4419;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    padding: .5rem;
+    border-radius: 0.4rem;
+  }
+
+/*****************************CHECKBOX***********************************************************************************************************************************************************************/
+
+  .box{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #7A4419;
+    width: 13%;
+  }
+
+  #equipment{
+    margin-top: 2rem;
+  }
+
+  .border-type{
+    border: 0.15rem solid #7A4419;
+    line-height: 1.68rem;
+    width: 100%;
+    padding: .5rem;
+    margin-left: .9rem;
+  }
+
+  .border-equipment{
+    border: 0.15rem solid #7A4419;
+    line-height: 1.68rem;
+    width: 100%;
+    padding: .5rem;
+    margin-left: .9rem;
+  }
+
+  .legend-type_equipment{
+    text-align: center;
+  }
+
+  body > .box > #equipment > .border-type > div{
+    display: block;
+  }
+
+/****************************PICTURES-DESC*******************************************************************************************************************************************************************/
+
+  main{
+    display: flex;
+  }
+
+  .accommodation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.15rem;
+    margin-left: 2.5rem;
+    justify-content: space-around;
+  }
+
+  .container > img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 0.4rem;
+  }
+
+  .accommodation > div{
+    max-width: 35vw;
+    margin: 1.5rem 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-color: #7A4419;
+    color: white;
+    border-radius: 0.4rem;
+  }
+
+  .accommodation > div > h2{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center; 
+    font-size: 1.6rem;
+  }
+
+  .accommodation > div > p{
+    margin-left: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .accommodation > div > button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #7A4419;
+    font-size: 1.3rem;
+    float: right;
+    margin-right: 3%;
+
+    cursor: pointer;
+  }
+
+  .accommodation > div > button > a{
+    text-decoration: none;
+    background-color: white;
+    color: #7A4419;
+  }
+
+  #div-footer{
+    margin-top: 1.5rem;
+    width: 96.4vw;
+    background-color: #7A4419;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #div-footer > p{
+    font-size: 1rem;
+    float: right;
+    letter-spacing: 1px;
+  }
+
+/****************************MODAL*******************************************************************************************************************************************************************/
+
+  .modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(255, 255, 255, 0.486); 
+
+  }
+  #myModal{
+    display: none; 
+  }
+
+  #modal-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background-color: #fefefe;
+    margin: 3% auto;  
+    padding: 20px;
+    border: 2px solid #7A4419;
+    font-family: 'Adelle Regular';
+  }
+
+  .mySlides > img {
+      width: 25vw;
+      max-height: 210px;
+    }
+    
+  .slideshow-container{
+    width: 25vw;
+    position: relative;
+  }
+    
+  .mySlides:nth-child(1)  {
+    display: block;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+  .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  #close {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #close:hover,
+  #close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .booking{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .booking > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .accommodationModal{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2rem;
+    text-align: justify;
+
+  }
+
+  .accommodationModal > h2{
+    text-align: center;
+    padding-bottom: 2rem ;
+  }
+
+  .firstRow{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .firstRow > :nth-child(2) {
+  padding:  0 10rem;
+  }
+
+  .secondRow{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+  }
+
+  .secondRow > :nth-child(2) {
+  padding:  0 5rem;
+  }
+
+  .arrival{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .arrival{
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+  #modal-content > form {
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  #modal-content > form > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0;
+    width: 70%;
+  }
+
+  #modal-content > form > div > input{
+    text-align: center;
+  }
+
+  #modal-content > form > input{
+    margin: 0.3rem 0;
+    width: 70%;
+    text-align: center;
+  }
+
+  #modal-content > form > button{
+    width: 40%;
+    color: white;
+    background-color: #7A4419;
+    border:  0;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+/****************************BOOKING*******************************************************************************************************************************************************************/
+
+
+  .bookingHeader{
+    background-color: #7A4419;
+    width: 100vw;
+    height: 20vh;
+  }
+
+  .bookingHeader > #logo {
+    height: 9vh;
+    margin-left: 5%;
+  }
+
+  .bookingHeader > #logo > img{
+    height: 9vh;
+  }
+
+  .thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5rem;
+    width: 100vw;
+    height: 80vh;
+    font-family: 'Adelle Regular';
+  }
+
+  .thanks > button{
+    
+    background-color: #7A4419;
+    border:  0;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .thanks > button > a {
+    font-family: 'Adelle Regular';
+    color: white;
+    text-decoration: none;
+  }
+
+}
+ 
+/*****************************MEDIA_QUERIES_FROM_1371PX******************************************************************************************************************************************************************/
+  
+  @media screen and (min-width: 1371px){
+/************************BACKGROUND-FORMULAIRE***************************************************************************************************************************************************************/
+
+body > header{
+  font-family: 'Adelle SemiBold';
+  font-size: 1rem;
+  color: #7A4419;
+}
+
+#logo{
+  position: absolute;
+  background-color: white;
+  opacity: 0.6;
+  padding: 1.5rem;
+  margin-left: 15%;
+  height: 13%;
+}
+
+.background_form{
+  background-image:url(medias/ryokan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 98.6vw;
+  display: flex;
+}
+
+.background_form > #logo > img{
+  height: 11.5vh;
+}
+
+#form{
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 0.7rem 0;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.input-form input{
+  background-color: rgba(255, 255, 255, 0.521);
+  border: none;
+  padding: 0.4rem;
+}
+
+#dispo{
+  background-color: #7A4419;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  padding: 0 .6rem;
+  border-radius: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+/*************************BUTTON_SELECT_TYPE*****************************************************************************************************************************************************************/
+
+#select-btn_div{
+  padding: 1.8rem;
+}
+  
+  #select-btn{
+  background-color: #7A4419;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  padding: .5rem;
+  border-radius: 0.4rem;
+}
+
+/*****************************CHECKBOX***********************************************************************************************************************************************************************/
+
+.box{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #7A4419;
+  width: 13%;
+}
+
+#equipment{
+  margin-top: 2rem;
+}
+
+.border-type{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  width: 100%;
+  padding: .5rem;
+  margin-left: .9rem;
+}
+
+.border-equipment{
+  border: 0.15rem solid #7A4419;
+  line-height: 1.68rem;
+  width: 100%;
+  padding: .5rem;
+  margin-left: .9rem;
+}
+
+.legend-type_equipment{
+  text-align: center;
+}
+
+body > .box > #equipment > .border-type > div{
+  display: block;
+}
+
+/****************************PICTURES-DESC*******************************************************************************************************************************************************************/
+
+main{
+  display: flex;
+}
+
+.accommodation{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1.15rem;
+  margin-left: 2.5rem;
+  justify-content: space-around;
+}
+
+.container > img{
+  width: 100%;
+  height: 50vh;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div{
+  max-width : 25vw;
+  margin: 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: #7A4419;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.accommodation > div > h2{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center; 
+  font-size: 1.6rem;
+}
+
+.accommodation > div > p{
+  margin-left: 2rem;
+  line-height: 1.8rem;
+}
+
+.accommodation > div > button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #7A4419;
+  font-size: 1.3rem;
+  margin-left: 80%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.accommodation > div > button > a{
+  text-decoration: none;
+  background-color: white;
+  color: #7A4419;
+}
+
+#div-footer{
+  margin-top: 1.5rem;
+  width: 96.4vw;
+  background-color: #7A4419;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+#div-footer  p{
+  font-size: 1rem;
+  float: right;
+  letter-spacing: 1px;
+}
+
+/****************************MODAL*******************************************************************************************************************************************************************/
+
+.modal {
+  display: block; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(255, 255, 255, 0.486); 
+
+}
+#myModal{
+  display: none; 
+}
+
+#modal-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+  background-color: #fefefe;
+  margin: 3% auto;  
+  padding: 20px;
+  border: 2px solid #7A4419;
+  font-family: 'Adelle Regular';
+}
+
+.mySlides > img {
+    width: 35vw;
+    max-height: 40vh;
+  }
+  
+.slideshow-container{
+  width: 35vw;
+  position: relative;
+}
+  
+.mySlides:nth-child(1)  {
+  display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#close {
+  color: #aaa;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  padding: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.booking{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.booking > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accommodationModal{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  max-height: 70vh;
+  padding: 2rem;
+  text-align: justify;
+
+}
+
+.accommodationModal > h2{
+  text-align: center;
+  padding-bottom: 2rem ;
+}
+
+.firstRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.firstRow > :nth-child(2) {
+padding:  0 13rem;
+}
+
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+}
+
+.secondRow > :nth-child(2) {
+padding:  0 5rem;
+}
+
+.arrival{
+  display: flex;
+  flex-direction: row;
+}
+
+.arrival{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+#modal-content > form {
+  display: flex;
+  flex-direction: column;
+  padding:1rem 0;
+  text-align: center;
+  align-items: center;
+}
+
+#modal-content > form > div{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0;
+  width: 70%;
+}
+
+#modal-content > form > div > input{
+  text-align: center;
+}
+
+#modal-content > form > input{
+  margin: 0.3rem 0;
+  width: 70%;
+  text-align: center;
+}
+
+#modal-content > form > button{
+  width: 40%;
+  color: white;
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/****************************BOOKING*******************************************************************************************************************************************************************/
+
+
+.bookingHeader{
+  background-color: #7A4419;
+  width: 100vw;
+  height: 20vh;
+}
+
+.bookingHeader > #logo {
+  height: 9vh;
+  margin-left: 5%;
+}
+
+.bookingHeader > #logo > img{
+  height: 9vh;
+}
+
+.thanks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 5rem;
+  width: 100vw;
+  height: 80vh;
+  font-family: 'Adelle Regular';
+}
+
+.thanks > button{
+  
+  background-color: #7A4419;
+  border:  0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.thanks > button > a {
+  font-family: 'Adelle Regular';
+  color: white;
+  text-decoration: none;
+}
+
+
+
+}
